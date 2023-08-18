@@ -1,0 +1,54 @@
+/* Reset some default styles */
+* {
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("india.gif");
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.bgimg{
+    position: absolute;
+    z-index: -5;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.description{
+    text-align: center;
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
